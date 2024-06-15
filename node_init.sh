@@ -7,13 +7,6 @@ KEY_PATH="/mnt/nfs/cluster_storage/init"
 PUBLIC_KEY_FILE="bazaar_root_key.pub"
 PUBLIC_KEY_PATH="$MOUNT_POINT/$PUBLIC_KEY_FILE"
 
-
-# Check if NFS mount and public key file are accessible
-if [ ! -f "$PUBLIC_KEY_PATH" ]; then
-  echo "Error: Public key file $PUBLIC_KEY_PATH not found."
-  exit 1
-fi
-
 echo "Installing necessary packages..."
 apt-get update
 apt-get install -y nfs-common openssh-server

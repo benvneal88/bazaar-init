@@ -1,5 +1,9 @@
 # bazaar-init
 
-git clone git@github.com:benvneal88/bazaar-init.git
-chmod +x node_init.sh
-sudo ./node_init.sh
+    su - root
+    apt install git
+    git clone https://github.com/benvneal88/bazaar-init.git
+
+    cd bazaar-init
+    chmod +x node_init.sh
+    ./node_init.sh
