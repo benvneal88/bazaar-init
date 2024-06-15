@@ -11,6 +11,9 @@ echo "Installing necessary packages..."
 apt-get update
 apt-get install -y nfs-common openssh-server
 
+# Stop Server from going to sleep
+systemctl mask sleep.target suspend.target hibernate.target suspend-then-hibernate.target hybrid-sleep.target
+
 # Create mount point
 echo "Creating mount point..."
 mkdir -p $MOUNT_POINT
