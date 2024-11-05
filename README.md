@@ -13,4 +13,5 @@
 
 
 Test ssh is enabled:
+
     ssh -i '/Users/ben/.ssh/bazaar_root_key' -o StrictHostKeychecking=no root@192.168.0.101
